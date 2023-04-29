@@ -1,0 +1,40 @@
+/*------------------------------
+    CSS for One Page Website
+------------------------------*/
+body {
+    background-color: antiquewhite;
+}
+
+p {
+    font-size: 18px;
+    font-family: "times new roman", sans-serif;
+}
+
+h6 {
+    font-size: 16px;
+    font-family: "Lucida Sans", Arial, sans-serif;
+}
+
+h1 {
+    font-size: 35px;
+    font-family: "Lucida Sans", Arial, sans-serif;
+    color:rgb(10, 87, 122)
+}
+
+h3 {
+    font-size: 28px;
+    font-family: "Lucida Sans", Arial, sans-serif;
+    color:rgb(10, 87, 122)
+}
+
+footer {
+    font-size: 14px;
+    font-family: Verdana, sans-serif  
+}
+
+form input[type="text"] {
+    width: 15%;
+    margin: 5px;
+    border: 1px solid rgb(26, 3, 107);
+    border-radius: 5px;
+}
