@@ -8,11 +8,11 @@
 	<body>
 		
 		<!--Nav Section-->
-		<ul>
-		<a href="#home" id="link"<li>HOME</li></a>
-		<a href="#gallery" id="link"<li>GALLERY</li></a>
-		<a href="#contact" id="link"<li>CONTACT</li></a>
-		</ul>
+			<div class="topnav">
+				<a href="#home" id="link"<li>HOME</li></a>
+				<a href="#gallery" id="link"<li>GALLERY</li></a>
+				<a href="#contact" id="link"<li>CONTACT</li></a>
+			</div>
 		<!--End Nav Section-->
 		
 		
@@ -24,62 +24,86 @@
 				<h6><br>Welcome! This website is dedicated to showcasing the most iconic cars in the world.</br></h6>
 				<h6>While all these cars are vastly differen't, they share two things in common, speed and value. To elaborate, all 3 cars
 				are known for being worth 6 figures and can reach 200 miles per hour!</h6>
-
 			</div>
 		<!--End Home Section-->
 		
 		<!--Gallery Section-->
+		<h2><i>Our Gallery</i></h2>
+		<div class="row">
+			<div class="column">
+			  <img src="..\One-Page Website\Images\thumbnail_1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+			</div>
+			<div class="column">
+			  <img src="..\One-Page Website\Images\thumbnail_2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+			</div>
+			<div class="column">
+			  <img src="..\One-Page Website\Images\thumbnail_3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+			</div>
+			<div class="column">
+				<img src="..\One-Page Website\Images\thumbnail_4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+			</div>
 		<div>
-			<div id="gallery">
-				<h3><strong><i>Gallery</i></strong></h3>
+		<div id="gallery">
+			<div>
+				<div id="myModal" class="modal">
+					<span class="close cursor" onclick="closeModal()">&times;</span>
+					<div class="modal-content">
+
+						<div class="mySlides">
+							<div class="numbertext">1 / 4</div>
+							<img src="..\One-Page Website\Images\thumbnail_1.jpg" style="width:100%" alt="Picture of a nissan skyline">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">2 / 4</div>
+							<img src="..\One-Page Website\Images\thumbnail_2.jpg" style="width:100%" alt="Picture of a ford mustang">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">3 / 4</div>
+							<img src="..\One-Page Website\Images\thumbnail_3.jpg" style="width:100%" alt="Picture of a audi r8">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">4 / 4</div>
+							<img src="..\One-Page Website\Images\thumbnail_4.jpg" style="width:100%" alt="Picture of a subaru wrx sti">
+						</div>
+
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+						<div class="caption-container">
+							<p id="caption"></p>
+						</div>
+
+						<div class="column">
+							<img class="demo cursor" src="..\One-Page Website\Images\thumbnail_1.jpg" style="width:100%" onclick="currentSlide(1)" alt=" - R34 Nissan Skyline">
+						  </div>
+
+						  <div class="column">
+							<img class="demo cursor" src="..\One-Page Website\Images\thumbnail_2.jpg" style="width:100%" onclick="currentSlide(2)" alt=" - The 1969 Ford Mustang">
+						  </div>
+
+						  <div class="column">
+							<img class="demo cursor" src="..\One-Page Website\Images\thumbnail_3.jpg" style="width:100%" onclick="currentSlide(3)" alt=" - The Audi R8 Supercar">
+						  </div>
+
+						  <div class="column">
+							<img class="demo cursor" src="..\One-Page Website\Images\thumbnail_4.jpg" style="width:100%" onclick="currentSlide(4)" alt=" - The Subaru WRX STI">
+						  </div>
+					</div>
+				</div>
+				<p><i><bold>- Click photos to enlarge!</bold></i></p>
+			</div>
+		<br>
+		<h3>Video Of A 900HP Nissan Skyline</h3>
+		<div>
+			<div>
+				<embed>
+					<iframe width="800" height="500" src="https://www.youtube.com/embed/5-0BwZ1r6H4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</embed>
 				<div>
-					
-					<!--Photo Container 1-->
-					<div>
-						<div>
-							<img src="..\One-Page Website\Images\thumbnail_1.jpg" alt="Picture of a nissan skyline">
-							<div>
-								<h6><ul><i>-The Nissan Skyline R34, AKA The Fast And The Furious!</i></ul></h6>
-							</div>
-						</div>
-					</div>
-					<!--End Photo Container 1-->
-					
-					<!--Photo Container 2-->
-					<div>
-						<div>
-							<img src="..\One-Page Website\Images\thumbnail_2.jpg" alt="Picture of a 1970 Ford Mustang">
-							<div>
-								<h6><ul><i>-An absolute classic, the legendary 1970 Ford Mustang!</i></ul></h6>
-							</div>
-						</div>
-					</div>
-					<!--End Photo Container 2-->
-					
-					<!--Photo Container 3-->
-					<div>
-						<div>
-							<img src="..\One-Page Website\Images\thumbnail_3.jpg" alt="Picture of a Audi R8">
-							<div>
-								<h6><ul><i>-The shellshocking Audi R8 supercar!</i></ul></h6>
-							</div>
-						</div>
-					</div>
-					<!--End Photo Container 3-->
-					
-					<!--Video Container-->
-					<div>
-						<div>
-							<embed>
-								<iframe width="800" height="500" src="https://www.youtube.com/embed/5-0BwZ1r6H4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-							</embed>
-							<div>
-								<h6><ul><i>-A video of the Nissan Skyline R34 in action!</i></ul></h6>
-							</div>
-						</div>
-					</div>
-					
-					<!--End Video Container-->
+					<h6><ul><i>-The Legendary Nissan Skyline R34 with a mind-numbing 900 horsepower in action!</i></ul></h6>
 				</div>
 			</div>
 		</div>
@@ -88,7 +112,7 @@
 		<!--Contact Form-->
 		<div id="contact">
 
-			<h3><strong><i>Contact Us</i></strong></h3>
+			<h1><strong><i>Contact Us</i></strong></h1>
 
 			<p>If you'd like to see more muscle/import cars, fill in your information to receive our entire gallery!</p>
 
@@ -111,6 +135,6 @@
 			</div>
 		</footer>
 		<!--End Footer Section-->
-		
+		<script src="JS/one_page_website.js"></script>
 	</body>
 </html>	
