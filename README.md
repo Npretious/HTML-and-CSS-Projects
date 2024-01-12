@@ -1,5 +1,5 @@
 # README
-### This repository holds projects from the HTML and CSS Tech Academy Courses
+### This repository holds projects from HTML and CSS.
 
 ## Projects
 ### - Space Station Website
